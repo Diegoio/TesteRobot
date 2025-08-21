@@ -5,48 +5,46 @@ Library        SeleniumLibrary
 
 ${URL}                          https://web.pontocertificado.com.br
 ${BROWSER}                      chrome
-${input_CPF}                    xpath=//input[@id="CPF"]
+${input_CPF}                    id=CPF
 ${input_Senha}                  xpath=//input[@id="Senha"]
 ${BTN_ENTRAR}                   xpath=//button[@class="btn btn-info btn-lg btn-block text-uppercase btn-rounded"]
-${BTN_BATER PONTO}              xpath=//a[@id="btnBaterPonto"]
-${BTN_CONFIRMAR PONTO}          xpath=//a[@id='btnBaterPontoConfirmar']
-${BTN_ATIVIDADE}                xpath=//button[@id="7504"]
-${BTN_AVANÇAR}                  xpath=//button[@id="AtividadeSelecionada"]
+${BTN_BATER_PONTO}              xpath=//a[@id="btnBaterPonto"]
+${BTN_CONFIRMAR_PONTO}          xpath=//a[@id='btnBaterPontoConfirmar']
+${BTN_ATIVIDADE}                xpath=//button[@id='7575']
+${BTN_AVANÇAR}                  xpath=//button[@id='AtividadeSelecionada']
 ${BTN_FECHAR}                   xpath=//button[@id="btnBaterPontoConfirmar"]
 
 
 *** Keywords ***
 Acessar a pagina portal do trabalhador
-    
-    Open Browser                            url=${URL}      browser=${BROWSER}
 
+    Open Browser                            url=${URL}      browser=${BROWSER}
 Preencher campos
     
-    Input Text                              ${input_CPF}        39813209305               
+    Input Text                              ${input_CPF}        28428241210               
 
 
-    Input Text                              ${input_Senha}      398132     
+    Input Text                              ${input_Senha}      123456    
 
 Clicar em Entrar
 
     Click Element                           ${BTN_ENTRAR}
-
+    Sleep                                   5s
 Clicar em Registrar Ponto
 
-    Click Element                           ${BTN_BATER PONTO} 
+    Click Element                           ${BTN_BATER_PONTO} 
 
-    Wait Until Page Contains Element        ${BTN_CONFIRMAR PONTO}
+    Wait Until Page Contains Element        ${BTN_CONFIRMAR_PONTO}
 
 Clicar em Confirmar
     
-    Click Element                           ${BTN_CONFIRMAR PONTO}
+    Click Element                           ${BTN_CONFIRMAR_PONTO}
 
 Seleciona a Atividade
-    Wait Until Page Contains Element        ${BTN_ATIVIDADE}   
+    Sleep    5
     Click Element                           ${BTN_ATIVIDADE}
     
 Atividade Selecionada  
-    Wait Until Page Contains Element        ${BTN_AVANÇAR}
     Click Element                           ${BTN_AVANÇAR}        
 
 Fechar o browser

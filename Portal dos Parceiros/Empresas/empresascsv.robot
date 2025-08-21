@@ -9,8 +9,8 @@ ${BTN_ACESSAR}                          xpath=//a[@href='/Admin']
 ${input_email}                          xpath=//input[@id='Email']
 ${input_password}                       xpath=//input[@id='Senha']
 ${BTN_ENTRAR}                           xpath=//button[@type='submit']
-${EMPRESAS}                             xpath=//*[@id="sidebarnav"]/li[8]/a/span
-${input_pesquisar}                      xpath=//*[@id="lista_filter"]/label/input
+${EMPRESAS}                             xpath=//span[@class='hide-menu'][contains(.,'Empresas')]
+${input_pesquisar}                      xpath=//input[contains(@type,'search')]
 ${CSV}                                  xpath=//*[@id="lista_wrapper"]/div[1]/button[2]
 
 *** Keywords ***
@@ -38,7 +38,7 @@ Clicar em Empresas
     Click Element                               ${EMPRESAS}
 
 Pesquisar Empresa
-
+    Sleep    10
     Input Text                                   ${input_pesquisar}                testeparceiros
 
 Baixar CSV

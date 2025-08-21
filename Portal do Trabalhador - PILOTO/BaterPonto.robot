@@ -20,7 +20,7 @@ ${BTN_FECHAR}                   xpath=//button[@id="btnBaterPontoConfirmar"]
 Acessar a pagina portal do trabalhador
     
     Open Browser                            url=${URL}      browser=${BROWSER}
-
+    
 Preencher campos
     
     Input Text                              ${input_CPF}        66497817034               
