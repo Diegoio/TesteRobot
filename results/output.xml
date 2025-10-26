@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20241130 09:13:05.819" rpa="false" schemaversion="4">
+<suite id="s1" name="TesteRobot" source="C:\Users\suporte\Desktop\Certificados  e estudos Stefanini\TesteRobot">
+<suite id="s1-s1" name="Portal do Trabalhador - PILOTO" source="C:\Users\suporte\Desktop\Certificados  e estudos Stefanini\TesteRobot\Portal do Trabalhador - PILOTO">
+<suite id="s1-s1-s1" name="BaterPonto" source="C:\Users\suporte\Desktop\Certificados  e estudos Stefanini\TesteRobot\Portal do Trabalhador - PILOTO\BaterPonto.robot">
+<test id="s1-s1-s1-t1" name="Abrir Site" line="61">
+<kw name="Acessar a pagina portal do trabalhador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241130 09:13:06.120" level="INFO">Opening browser 'chrome' to base url 'https://pilotoweb.pontocertificado.com.br/'.</msg>
+<msg timestamp="20241130 09:13:09.782" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="FAIL" starttime="20241130 09:13:06.120" endtime="20241130 09:13:09.782"/>
+</kw>
+<status status="FAIL" starttime="20241130 09:13:06.120" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Preencher campos">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Clicar em Entrar">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Clicar em Confirmar1">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Clicar em Registrar Ponto">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Clicar em Confirmar">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Seleciona a Atividade">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Atividade Selecionada">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<kw name="Fechar o browser">
+<status status="NOT RUN" starttime="20241130 09:13:09.782" endtime="20241130 09:13:09.782"/>
+</kw>
+<status status="FAIL" starttime="20241130 09:13:06.120" endtime="20241130 09:13:09.782">Execution terminated by signal</status>
+</test>
+<status status="FAIL" starttime="20241130 09:13:05.872" endtime="20241130 09:13:09.798"/>
+</suite>
+<status status="FAIL" starttime="20241130 09:13:05.864" endtime="20241130 09:13:09.801"/>
+</suite>
+<status status="FAIL" starttime="20241130 09:13:05.832" endtime="20241130 09:13:09.801"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TesteRobot">TesteRobot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Portal do Trabalhador - PILOTO">TesteRobot.Portal do Trabalhador - PILOTO</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="BaterPonto">TesteRobot.Portal do Trabalhador - PILOTO.BaterPonto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

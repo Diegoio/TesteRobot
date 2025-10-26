@@ -35,9 +35,9 @@ Clicar em Entrar
 
 Preencher campos
 
-    Input Text                              ${input_email}      ROBERTO.TESTEPROD@PCS.COM               
+    Input Text                              ${input_email}      DIEGODOMINGOS20.DD@GOOGLEMAIL.COM               
 
-    Input Text                              ${input_password}   123  
+    Input Text                              ${input_password}   111111  
 
 Clicar em Entrar2
 

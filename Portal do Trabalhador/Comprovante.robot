@@ -22,10 +22,10 @@ Acessar a pagina portal do trabalhador
 
 Preencher campos
     
-    Input Text                              ${input_CPF}        39813209305               
+    Input Text                              ${input_CPF}        28428241210                
 
 
-    Input Text                              ${input_Senha}      398132     
+    Input Text                              ${input_Senha}      123456     
 
 Clicar em Entrar
 

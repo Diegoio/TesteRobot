@@ -5,8 +5,8 @@ Library        SeleniumLibrary
 
 ${URL}                          https://web.pontocertificado.com.br
 ${BROWSER}                      chrome
-${input_CPF}                    xpath=//input[@id="CPF"]
-${input_Senha}                  xpath=//input[@id="Senha"]
+${input_CPF}                    id=CPF
+${input_Senha}                  id=Senha
 ${BTN_ENTRAR}                   xpath=//button[@class="btn btn-info btn-lg btn-block text-uppercase btn-rounded"]
 ${BTN_CartaodePonto}            xpath=//a[@id='idRelatorio']/i
 ${BTN_CartaodePontoCSV}         xpath=//input[@id='tipoGeracao1']
@@ -24,10 +24,10 @@ Acessar a pagina portal do trabalhador
 
 Preencher campos
     
-    Input Text                              ${input_CPF}        39813209305               
+    Input Text                              ${input_CPF}        28428241210               
 
 
-    Input Text                              ${input_Senha}      398132     
+    Input Text                              ${input_Senha}      123456     
 
 Clicar em Entrar
 
@@ -37,8 +37,8 @@ Clicar em Cartão de Ponto CSV
 
     Click Element                           ${BTN_CartaodePonto} 
     Click Element                           ${BTN_CartaodePontoCSV}
-    Input Text                              ${BTN_SelecionaDataInicio}        01-02-2023
-    Input Text                              ${BTN_SelecionaDataFim}           15-02-2023
+    Input Text                              ${BTN_SelecionaDataInicio}        10-10-2023
+    Input Text                              ${BTN_SelecionaDataFim}           20-10-2023
     Sleep                                   5s
 Clicar em Gerar Relatório
 

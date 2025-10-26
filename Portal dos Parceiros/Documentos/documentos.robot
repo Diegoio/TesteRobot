@@ -3,7 +3,7 @@ Library        SeleniumLibrary
 
 *** Variables ***
 
-${URL}                                  https://parceiro.pontocertificado.com.br/
+${URL}                                  https://newmobile.pontocertificado.com.br/
 ${BROWSER}                              chrome
 ${BTN_ACESSAR}                          xpath=//a[@href='/Admin']
 ${input_email}                          xpath=//input[@id='Email']

@@ -24,21 +24,21 @@ Acessar a pagina portal do trabalhador
 
 Preencher campos
     
-    Input Text                              ${input_CPF}        39813209305               
+    Input Text                              ${input_CPF}        28428241210                
 
 
-    Input Text                              ${input_Senha}      398132     
+    Input Text                              ${input_Senha}      123456     
 
 Clicar em Entrar
 
     Click Element                           ${BTN_ENTRAR}
-
+    
 Clicar em Cartão de Ponto PDF
 
     Click Element                           ${BTN_CartaodePonto} 
     Click Element                           ${BTN_CartaodePontoPDF} 
-    Input Text                              ${BTN_SelecionaDataInicio}        01-02-2023
-    Input Text                              ${BTN_SelecionaDataFim}           15-02-2023
+    Input Text                              ${BTN_SelecionaDataInicio}        10-10-2023
+    Input Text                              ${BTN_SelecionaDataFim}           20-10-2023
     Sleep                                   5s
 Clicar em Gerar Relatório
 
